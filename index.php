@@ -68,7 +68,6 @@ try {
 
     <div class="mx-auto flex min-h-full max-w-5xl flex-col px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <header class="mb-10 text-center sm:mb-12">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-400/90">MySQL · PDO</p>
             <h1 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Comments</h1>
             <p class="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-slate-400">
                 Rows from the <code class="rounded bg-slate-800/80 px-1.5 py-0.5 font-mono text-xs text-indigo-200">test</code> table.
