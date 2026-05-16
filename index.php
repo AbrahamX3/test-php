@@ -134,6 +134,8 @@ try {
         </main>
 
         <footer class="mt-10 text-center text-xs text-slate-500">
+            <a href="upload.php" class="text-indigo-400 hover:text-indigo-300">Test image upload</a>
+            <span class="mx-2 text-slate-600">·</span>
             Rendered with PHP &middot; Styled with Tailwind CSS
         </footer>
     </div>
