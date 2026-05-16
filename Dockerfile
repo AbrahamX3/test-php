@@ -25,8 +25,12 @@ COPY nginx.conf /etc/nginx/http.d/default.conf
 # Copy Supervisor config
 COPY supervisord.conf /etc/supervisord.conf
 
-# Create storage directory if needed
-RUN mkdir -p storage && chmod -R 775 storage
+# Writable dirs — mount a named volume at /var/www/uploads on deploy
+RUN mkdir -p storage uploads \
+    && chown -R www-data:www-data storage uploads \
+    && chmod -R 775 storage uploads
+
+VOLUME ["/var/www/uploads"]
 
 # Expose port 80
 EXPOSE 80
